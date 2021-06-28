@@ -1,0 +1,12 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A simple file server implementation.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest test",
+    "start": "node server.js"
+  },
+  "author": "Gregory Waters",
+  "license": "UNLICENSED"
+}
