@@ -1,11 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 const pathToMimeType = require('./path-to-mime-type');
-const request = require('request')
+//const request = require('request')
 
 function serveFile(req, res) {
   var pathname = new URL(req.url, 'http://localhost').pathname;
   var filePath = path.join('public', pathname);
+  var mimeType = pathToMimeType(filePath);
   fs.readFile(filePath, function(err, body){
     if(err) {
       console.error(err);
@@ -20,6 +21,3 @@ function serveFile(req, res) {
 
 module.exports = serveFile;
 
-  var pathname = new URL(req.url, "http://localhost").pathname;
-  var filePath = path.join('public', pathname);
-  var mimeType = pathToMimeType(filePath);

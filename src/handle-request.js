@@ -1,3 +1,7 @@
+/// Should be deleted and replaced by app.js
+// CHECK BLOG TUTORIALS
+
+
 const fs = require('fs');
 const path = require('path');
 const serveFile = require('./serve-file');

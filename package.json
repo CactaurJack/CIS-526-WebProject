@@ -8,5 +8,9 @@
     "start": "node server.js"
   },
   "author": "Gregory Waters",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "better-sqlite3": "^7.4.1",
+    "express": "^4.17.1"
+  }
 }

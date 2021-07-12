@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const serveFile = require('./serve-file');
-const request = require('request')
 
 function listDirectory(req, res) {
   
